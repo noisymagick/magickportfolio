@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-329DNG7QFH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-329DNG7QFH');
+</script>
+
+<!-- Стандартная кодировка и мета-тег для обеспечения адаптивности на устройствах -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Alexander Saloidov - Portfolio</title>
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Скрипт для предотвращения эффекта "мигания" контента при загрузке языка -->
+    <script>
+        (function() {
+            var lang = localStorage.getItem('lang') || 'ru';
+            var style = document.createElement('style');
+            style.textContent = 'body:not(.lang-loaded) { visibility: hidden; }';
+            document.head.appendChild(style);
+            window.addEventListener('DOMContentLoaded', function() {
+                var buttons = document.querySelectorAll('.lang-btn');
+                buttons.forEach(function(btn) {
+                    btn.classList.remove('active');
+                    if (btn.dataset.lang === lang) {
+                        btn.classList.add('active');
+                    }
+                });
+            });
+        })();
+    </script>
+</head>
+
+<body>
+<canvas class="grain"></canvas>
+
+<header class="header">
+    <!-- Навигационная панель с закреплением (sticky) -->
+    <nav class="nav">
+
+        <div class="nav-left">
+
+            <div class="nav-indicator"></div>
+
+            <a href="#home" data-i18n="nav.home">Home</a>
+            <a href="#projects" data-i18n="nav.projects">Projects</a>
+            <a href="#archive" data-i18n="nav.archive">Archive</a>
+
+        </div>
+
+        <div class="lang-switch">
+            <!-- Кнопки переключения языка -->
+            <button class="lang-btn active" data-lang="ru">
+                Ru
+            </button>
+
+            <span>/</span>
+
+            <button class="lang-btn" data-lang="en">
+                Eng
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<main>
+
+<section id="home" class="hero reveal">
+    <!-- Сетка вводного блока -->
+    <div class="intro-grid">
+
+        <div class="intro-col-1">
+
+            <h2 data-i18n="hero.name">Alexander Saloidov</h2>
+
+             <p data-i18n="hero.subtitle" style="margin-bottom: 40px;">Graphic & Communication Designer</p>
+
+             <div class="links">
+                 <p class="emoji-bw" style="margin-bottom: 0px; font-size: 24px;">✉️</p>
+
+                <a href="mailto:mail@gmail.com">
+                    asaloidov@gmail.com
+                </a>
+
+                <a href="https://t.me/noisymagick" target="_blank">
+                    Telegram
+                </a>
+
+                <a href="https://linkedin.com/in/noisymagick" target="_blank">
+                    LinkedIn
+                </a>
+
+            <a href="https://drive.google.com/drive/folders/1M9Cwk7g5C73wEOG5dkeqZ1lVrzjtoS2z?usp=sharing" target="_blank" data-i18n="general.cv">CV ←</a>
+
+            </div>
+
+        </div>
+
+        <div class="intro-col-2 about-me">
+            <!-- Блок "Обо мне" -->
+            <h2 data-i18n="hero.about_title">About me:</h2>
+            <p data-i18n="hero.about_text_1">I am a designer working at the intersection of communications, graphic design, and digital environments.</p>
+            <p data-i18n="hero.about_text_2">I specialize in creating holistic visual systems — from brand identity and marketing materials to websites.</p>
+            <p data-i18n="hero.about_text_3">I focus on meaning, not tools.</p>
+            <p data-i18n="hero.useful_for">How I can be useful:</p>
+            <!-- Контейнер для сменяющихся тегов услуг -->
+            <div id="service-tags"></div>
+
+        </div>
+
+        <div class="intro-col-3">
+            <h2 data-i18n="hero.experience_title">Work experience:</h2>
+            <div class="experience" id="experience-list">
+                <!-- Заполняется динамически из JSON -->
+            </div>
+
+        </div>
+
+        <div class="intro-col-4">
+            <h2 data-i18n="hero.clients_title">Selected Clients:</h2>
+            <p data-i18n="hero.clients_text">Yandex, Yango, Sber, Shchel.och, MTS, Moscow Transport Museum, O-Mobile, Chelyabinsk Children's Philharmonic, Markul and others</p>
+            
+            <div class="portrait">
+                <!-- Секция с портретом, привязанная к колонке -->
+                <img src="img/me.jpg" alt="portrait">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="projects" class="reveal" style="padding-top: 80px; margin-top: -56px;">
+    <!-- Среда с горизонтальной прокруткой проектов -->
+    <div class="projects-row" style="margin-bottom: 80px;">
+
+        <a href="#" class="project-card" data-status="nda" data-project="project-yango.html">
+
+            <div class="project-head">
+
+                <h3 data-ru="Yango (ОАЭ) / PRAGMATICA — 2025" data-en="Yango (UAE) / PRAGMATICA — 2025">Yango (ОАЭ) / PRAGMATICA — 2025</h3>
+
+                <p data-ru="КВ, SMM, E-Commerce, POS, Перформанс, ИИ-графика" data-en="KVs, SMM, E-Commerce, POS, Performance, AI-graphics">КВ, SMM, E-Commerce, POS, Перформанс, ИИ-графика</p>
+
+            </div>
+
+            <div class="project-image">
+                <img src="img_project_covers/Yasmina.jpg">
+
+            </div>
+
+        </a>
+
+        <!--
+        <a href="project-flowdesk.html" class="project-card" data-status="active">
+
+            <div class="project-head">
+
+                <h3 data-ru="Flowdesk — 2026" data-en="Flowdesk — 2026">Flowdesk — 2026</h3>
+
+                <p data-ru="Бренд-айдентика" data-en="Brand Identity">Brand Identity</p>
+
+            </div>
+
+            <div class="project-image">
+
+                <img src="img_project_covers/Flowdesk.jpg" alt="">
+
+            </div>
+
+        </a>
+        -->
+
+        <a href="#" class="project-card" data-status="soon">
+
+            <div class="project-head">
+
+                <h3 data-ru="Flowdesk — 2026" data-en="Flowdesk — 2026">Flowdesk — 2026</h3>
+
+                <p data-ru="Бренд-айдентика" data-en="Brand Identity">Brand Identity</p>
+
+            </div>
+
+            <div class="project-image">
+
+                <img src="img_project_covers/Flowdesk.jpg" alt="">
+
+            </div>
+
+        </a>
+
+        <a href="#" class="project-card" data-status="soon">
+
+            <div class="project-head">
+
+                <h3 data-ru="Caramel Co (Израиль) — 2024" data-en="Caramel Co (Israel) — 2024">Caramel Co (Израиль) — 2024</h3>
+
+                <p data-ru="Бренд-айдентика, упаковка, печатная продукция" data-en="Brand Identity, Packaging, Print Materials">Brand Identiy, Packaging, Print Materials</p>
+
+            </div>
+
+            <div class="project-image">
+
+                <img src="img_project_covers/CaramelCo.jpg">
+
+            </div>
+
+        </a>
+
+        <a href="#" class="project-card" data-status="soon">
+
+            <div class="project-head">
+
+                <h3 data-ru="Яндекс Музыка — 2026" data-en="Yandex Music — 2026">Яндекс Музыка — 2026</h3>
+
+                <p data-ru="КВ, ИИ-графика — *Тест*" data-en="KVs, AI-graphics — *Test*">КВ, ИИ-графика — *Тест*</p>
+
+            </div>
+
+            <div class="project-image">
+
+                <img src="img_project_covers/YandexMusic.jpg">
+
+            </div>
+
+        </a>
+
+        <a href="#" class="project-card" data-status="soon">
+
+            <div class="project-head">
+
+                <h3 data-ru="КРОВ — 2024" data-en="KROV — 2024">КРОВ — 2024</h3>
+
+                <p data-ru="Бренд-айдентика, печатная продукция, упаковка" data-en="Brand Identity, Print Materials, Packaging">Brand Identiy, Print Materials, Packaging</p>
+
+            </div>
+
+            <div class="project-image">
+
+                <img src="img_project_covers/KROV.jpg">
+
+            </div>
+
+        </a>
+
+                <a href="#" class="project-card" data-status="soon">
+
+            <div class="project-head">
+
+                <h3 data-ru="Lukum / PackFor — 2024" data-en="Lukum / PackFor — 2024">Lukum / PackFor — 2024</h3>
+
+                <p data-ru="Бренд-айдентика, упаковка" data-en="Brand Identity, Packaging">Brand Identiy, Packaging</p>
+
+            </div>
+
+            <div class="project-image">
+
+                <img src="img_project_covers/LUKUM.jpg">
+
+            </div>
+
+        </a>
+
+        <a href="#" class="project-card" data-status="soon">
+
+            <div class="project-head">
+
+                <h3 data-ru="МРАКОБЕС — 2020 → 2026" data-en="MRAKOBES — 2020 → 2026">МРАКОБЕС — 2020 → 2026</h3>
+
+                <p data-ru="Арт-дирекшн, печатная продукция, логотип, мерч" data-en="Art-Direction, Print Materials, Logotype, Merch Design">Art-Direction, Print Materials, Logotype, Merch Design</p>
+
+            </div>
+
+            <div class="project-image">
+
+                <img src="img_project_covers/MRAKOBES.jpg">
+
+            </div>
+
+        </a>
+
+        <a href="#" class="project-card" data-status="soon">
+
+            <div class="project-head">
+
+                <h3 data-ru="О-Мобайл (Таджикистан) / ЫТЬ!  — 2024" data-en="O-Mobile (Tajikistan) / YT! — 2024">О-Мобайл (Таджикистан) / ЫТЬ!  — 2024</h3>
+
+                <p data-ru="SMM, POS, КВ" data-en="SMM, POS, KVs">SMM, POS, KВ</p>
+
+            </div>
+
+            <div class="project-image">
+
+                <img src="img_project_covers/OMobile.jpg">
+
+            </div>
+
+        </a>
+
+        <a href="#" class="project-card" data-status="soon">
+
+            <div class="project-head">
+
+                <h3 data-ru="Agency Portfolio Redesign / ЫТЬ! — 2024" data-en="Agency Portfolio Redesign / YT! — 2024">Agency Portfolio Redesign / ЫТЬ! — 2024</h3>
+
+                <p data-ru="Веб-дизайн" data-en="Web-Design">Web-Design</p>
+
+            </div>
+
+            <div class="project-image">
+
+                <img src="img_project_covers/ITE_Website.jpg">
+
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+
+<section id="archive" class="reveal">
+    <!-- Сетка архива, изображения добавляются динамически из script.js -->
+    <div class="archive-grid" id="archive-grid">
+    </div>
+
+</section>
+
+<footer class="footer">
+    <div class="footer-main">
+        <div class="f-col contact">
+            <a href="mailto:asaloidov@gmail.com">asaloidov@gmail.com</a>
+            <a href="https://t.me/noisymagick" target="_blank">Telegram</a>
+            <a href="https://linkedin.com/in/noisymagick" target="_blank">LinkedIn</a>
+        </div>
+        <div class="f-col">
+            <p data-i18n="footer.open_to_work">Чувствуйте себя свободно, я открыт<br>к коммуникации</p>
+        </div>
+        <div class="f-col">
+            <p data-i18n="footer.approach_text">Нахожу индивидуальный подход к<br>каждому клиенту, глубоко погружаясь<br>в контекст и цели</p>
+        </div>
+        <div class="f-col">
+            <p data-i18n="footer.contact_text">Свяжитесь со мной, чтобы мы обсудили<br>ваш проект, составили прозрачный план<br>и начали работу</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p data-i18n="footer.credits">Дизайн и реализация noisymagick</p>
+        <p>WIP © 2026</p>
+    </div>
+</footer>
+
+</main>
+
+<!-- Модальное окно для доступа к проектам под NDA (защита паролем) -->
+<div id="nda-modal" class="nda-modal">
+    <div class="nda-modal-content">
+        <div class="nda-input-row">
+            <input type="password" id="nda-input" data-i18n-attr="placeholder:nda.placeholder">
+            <button id="nda-submit"><span>&rarr;</span></button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

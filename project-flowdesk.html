@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowdesk — Alexander Saloidov</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Скрипт для корректной загрузки языка -->
+    <script>
+        (function() {
+            var lang = localStorage.getItem('lang') || 'ru';
+            var style = document.createElement('style');
+            style.textContent = 'body:not(.lang-loaded) { visibility: hidden; }';
+            document.head.appendChild(style);
+            window.addEventListener('DOMContentLoaded', function() {
+                var buttons = document.querySelectorAll('.lang-btn');
+                buttons.forEach(function(btn) {
+                    btn.classList.remove('active');
+                    if (btn.dataset.lang === lang) {
+                        btn.classList.add('active');
+                    }
+                });
+            });
+        })();
+    </script>
+</head>
+<body>
+<canvas class="grain"></canvas>
+
+<header class="header">
+
+    <nav class="nav">
+
+        <div class="nav-left">
+
+            <div class="nav-indicator"></div>
+
+            <a href="index.html#home"
+               data-ru="Главная"
+               data-en="Home">
+               Главная
+            </a>
+
+            <a href="index.html#projects"
+               data-ru="Проекты"
+               data-en="Projects"
+               class="active">
+               Проекты
+            </a>
+
+            <a href="index.html#archive"
+               data-ru="Архив"
+               data-en="Archive">
+               Архив
+            </a>
+
+        </div>
+
+        <div class="lang-switch">
+
+            <button class="lang-btn active" data-lang="ru">
+                Ru
+            </button>
+
+            <span>/</span>
+
+            <button class="lang-btn" data-lang="en">
+                Eng
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<main class="project-content-wrapper">
+    <!-- Блок с описанием проекта -->
+    <div class="project-info">
+        <a href="index.html#projects" class="back-link" data-ru="← Назад" data-en="← Back">← Назад</a>
+        <h1 data-ru="Flowdesk" data-en="Flowdesk">Flowdesk</h1>
+        <p data-ru="Разработка бренд-айдентики для современной платформы." data-en="Brand Identity development for a modern platform.">Разработка бренд-айдентики для современной платформы.</p>
+        <p data-ru="Описание проекта. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." data-en="Project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.">Описание проекта. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    
+    <!-- Блок с изображениями проекта -->
+    <div class="project-content">
+        <img src="img_projects/Flowdesk/Cover.jpg" alt="Flowdesk Cover">
+        <img src="img_projects/Flowdesk/Conept_2.jpg" alt="Flowdesk">
+        <img src="img_projects/Flowdesk/Conept_3.jpg" alt="Flowdesk">
+        <img src="img_projects/Flowdesk/Conept_4.jpg" alt="Flowdesk">
+        <img src="img_projects/Flowdesk/Conept_5.jpg" alt="Flowdesk">
+        <img src="img_projects/Flowdesk/Conept_6.jpg" alt="Flowdesk">
+        <img src="img_projects/Flowdesk/Conept_7.jpg" alt="Flowdesk">
+        <img src="img_projects/Flowdesk/Conept_8.jpg" alt="Flowdesk">
+        <img src="img_projects/Flowdesk/Conept_9.jpg" alt="Flowdesk">
+        <img src="img_projects/Flowdesk/Conept_10.jpg" alt="Flowdesk">
+        <img src="img_projects/Flowdesk/Conept_11.jpg" alt="Flowdesk">
+        <img src="img_projects/Flowdesk/Conept_12.jpg" alt="Flowdesk">
+        <img src="img_projects/Flowdesk/Conept_13.jpg" alt="Flowdesk">
+        <img src="img_projects/Flowdesk/Conept_14.jpg" alt="Flowdesk">
+        <img src="img_projects/Flowdesk/Conept_15.jpg" alt="Flowdesk">
+        <img src="img_projects/Flowdesk/Conept_16.jpg" alt="Flowdesk">
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

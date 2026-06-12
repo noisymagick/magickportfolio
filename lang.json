@@ -1,0 +1,82 @@
+{
+  "ru": {
+    "nav": {
+      "home": "Главная",
+      "projects": "Проекты",
+      "archive": "Архив"
+    },
+    "hero": {
+      "name": "<span class=\"emoji-bw\">🧑🏻‍🎨</span> <br> Александр Салоидов",
+      "subtitle": "Графический & Коммуникационный дизайнер",
+      "about_title": "<span class=\"emoji-bw\">👀</span> <br> Обо мне",
+      "about_text_1": "Я дизайнер, работающий на стыке коммуникаций, графики и диджитал-среды",
+      "about_text_2": "Специализируюсь на создании целостных визуальных систем — от бренд-айдентики и маркетинговых материалов до веб-сайтов",
+      "about_text_3": "Фокусируюсь на смыслах, а не на инструментах",
+      "useful_for": "Чем я могу быть полезен:",
+      "tags": "Брендинг и визуальная айдентика,Визуальная коммуникация,Цифровой дизайн,Креативное направление,Графика и печатная продукция",
+      "experience_title": "<span class=\"emoji-bw\">💼</span> <br> Опыт работы",
+      "experience_list": [
+        "2025 <br> PRAGMATICA / Коммуникационный дизайнер",
+        "2024 <br> PackFor Studio / Графический дизайнер",
+        "2023 <br> ЫТЬ! Agency / Графический дизайнер",
+        "2021 → now <br> Freelance / Дизайнер"
+      ],
+      "clients_title": "<span class=\"emoji-bw\">🎨</span> <br> Избранные клиенты",
+      "clients_text": "Яндекс, Yango, Сбер, Щёлочь, МТС, Музей Транспорта Москвы, О-Мобайл, Детская Филармония Челябинска, Markul и другие"
+    },
+    "footer": {
+      "open_to_work": "Чувствуйте себя свободно, я открыт к коммуникации",
+      "approach_text": "Я нахожу индивидуальный подход к каждому клиенту, глубоко погружаясь в контекст",
+      "contact_text": "Свяжитесь со мной, чтобы мы обсудили ваш проект, составили прозрачный план и начали работу",
+      "credits": "Дизайн и реализация noisymagick"
+    },
+    "nda": {
+      "placeholder": "Введите пароль",
+      "error": "Пароль не подходит :("
+    },
+    "general": {
+      "soon": "Скоро",
+      "cv": "CV ←"
+    }
+  },
+  "en": {
+    "nav": {
+      "home": "Home",
+      "projects": "Projects",
+      "archive": "Archive"
+    },
+    "hero": {
+      "name": "<span class=\"emoji-bw\">🧑🏻‍🎨</span> <br> Alexander Saloidov",
+      "subtitle": "Graphic & Communication Designer",
+      "about_title": "<span class=\"emoji-bw\">👀</span> <br> About me",
+      "about_text_1": "I am a designer working at the intersection of communications, graphic design, and digital environments",
+      "about_text_2": "I specialize in creating holistic visual systems — from brand identity and marketing materials to websites",
+      "about_text_3": "I focus on meaning, not tools",
+      "useful_for": "How I can be useful:",
+      "tags": "Brand Identity,Visual Communication,Digital Design,Creative Direction,Graphic & Print Production",
+      "experience_title": "<span class=\"emoji-bw\">💼</span> <br> Work experience",
+      "experience_list": [
+        "2025 <br> PRAGMATICA / Communication Designer",
+        "2024 <br> PackFor Studio / Graphic Designer",
+        "2023 <br> ЫТЬ! Agency / Graphic Designer",
+        "2021 → now <br> Freelance / Designer"
+      ],
+      "clients_title": "<span class=\"emoji-bw\">🎨</span> <br> Selected Clients",
+      "clients_text": "Yandex, Yango, Sber, Sholotch, MTS, Moscow Transport Museum, O-Mobile, Chelyabinsk Children's Philharmonic, Markul and others"
+    },
+    "footer": {
+      "open_to_work": "Feel free to reach out, I am open to communication",
+      "approach_text": "I find an individual approach for every client, diving deep into the context",
+      "contact_text": "Contact me so we can discuss your project, create a transparent plan, and get started",
+      "credits": "Design and development by noisymagick"
+    },
+    "nda": {
+      "placeholder": "Enter password",
+      "error": "Password incorrect :("
+    },
+    "general": {
+      "soon": "Soon",
+      "cv": "CV ←"
+    }
+  }
+}
