@@ -139,6 +139,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         modal.onclick = (e) => { if(e.target === modal) modal.style.display = "none"; };
 
         const archiveImages = ["Ahmad Fashion Prints.jpg", "Ahmad Fashion-1.jpg", "Ahmad Fashion.jpg", "BF_Bag.png", "Boho_logo.jpg", "Cassette Visual-1.png", "Cassette Visual.jpg", "Cassette.png", "Cave_Rocknroll_Typography.jpg", "Cover.jpg", "Crystalgloww Cover.jpg", "EGSN.png", "Gazel Poster.jpg", "Gegen Cover.jpg", "Gegen Logo.jpg", "HF Poster.jpg", "Hellsteel Poster.jpg", "KeramaRama Poster.jpg", "Lettering-2.jpg", "Lettering.jpg", "Logo Sketch.jpg", "Logo-1.jpg", "Logo-2.jpg", "Logo-3.jpg", "Logo-4.jpg", "Logo.jpg", "Logotype.jpg", "Markul Cover.jpg", "Merch Bag.jpg", "Merch T-Shirt-1.jpg", "Merch T-Shirt.jpg", "Mockup.jpg", "Monument Logo.jpg", "Nonamegig Poster.jpg", "Poster Ahmad Fashion.jpg", "Poster Alkali.jpg", "PuffusThai.jpeg", "Sonya Poster.jpg", "UHO Poster 2026.jpg", "ftw_sticker.png", "logo_ftw.png", "mkarobes_gif.gif", "zine1.png", "zine2.png", "zine3.png", "zine4.png", "Красногвардейская Poster.jpg", "МРАКОБЕС Tour Poster.jpg", "Монумент Cover.jpg", "Москва А2.jpeg", "Нижний А2.jpeg", "Рыцарь Горя Cover.jpg", "Туровая А2.jpeg", "Ярославль А2.jpeg"];
+        
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.style.display === "flex") {
+                modal.style.display = "none";
+            }
+        });
+
         archiveImages.sort(() => Math.random() - 0.5).forEach(src => {
             const img = document.createElement("img");
             img.src = `img_archive/${src}`;
@@ -206,7 +213,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 e.preventDefault();
                 ndaModal.style.display = "flex";
                 ndaInput.focus();
-                ndaSubmit.onclick = () => {
+                const checkNda = () => {
                     if (ndaInput.value === "1111") {
                         ndaModal.style.display = "none";
                         ndaInput.value = "";
@@ -217,17 +224,26 @@ document.addEventListener('DOMContentLoaded', async () => {
                         ndaInput.placeholder = translations[currentLang].nda.error;
                     }
                 };
+
+                ndaSubmit.onclick = checkNda;
+                ndaInput.onkeydown = (e) => {
+                    if (e.key === 'Enter') checkNda();
+                };
             });
         }
     });
 
-    if(ndaModal) ndaModal.onclick = (e) => { 
-        if(e.target === ndaModal) {
+    if(ndaModal) {
+        const closeNda = () => {
             ndaModal.style.display = "none";
             ndaInput.placeholder = translations[currentLang].nda.placeholder;
             ndaInput.value = "";
-        } 
-    };
+        };
+        ndaModal.onclick = (e) => { if(e.target === ndaModal) closeNda(); };
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && ndaModal.style.display === "flex") closeNda();
+        });
+    }
 
     /**
      * Grain Effect
@@ -322,4 +338,41 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
     
     if(grainEl) new Grain(grainEl);
+
+    /* --- Прокрутка проектов мышью по позиции курсора --- */
+    const projectsRow = document.querySelector(".projects-row");
+    if (projectsRow && window.innerWidth > 768) {
+        let mouseX = 0;
+        let isHovering = false;
+        let requestId = null;
+
+        const scrollLoop = () => {
+            if (isHovering) {
+                const rect = projectsRow.getBoundingClientRect();
+                const center = rect.width / 2;
+                const relativeX = mouseX - rect.left;
+                
+                // Зона срабатывания (по 20% от краев)
+                const margin = rect.width * 0.2;
+                let speed = 0;
+
+                if (relativeX < margin) {
+                    speed = (relativeX - margin) / margin * 15;
+                } else if (relativeX > rect.width - margin) {
+                    speed = (relativeX - (rect.width - margin)) / margin * 15;
+                }
+
+                if (speed !== 0) {
+                    projectsRow.scrollLeft += speed;
+                }
+            }
+            requestId = requestAnimationFrame(scrollLoop);
+        };
+
+        projectsRow.addEventListener("mouseenter", () => isHovering = true);
+        projectsRow.addEventListener("mouseleave", () => isHovering = false);
+        projectsRow.addEventListener("mousemove", (e) => mouseX = e.clientX);
+
+        scrollLoop();
+    }
 });
