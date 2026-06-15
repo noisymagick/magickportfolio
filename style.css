@@ -146,7 +146,7 @@ img {
 /* Портрет */
 .portrait {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 56px;
     transition: opacity 0.3s ease;
     opacity: 1;
 }
@@ -246,7 +246,7 @@ h2 .emoji, h2 .emoji-bw {
     gap: 1.0em;
     color: #ffffff;
     /* Фиксированная высота */
-    height: 710px; 
+    height: 694px;
     padding-bottom: 0;
 }
 
@@ -274,7 +274,7 @@ h2 .emoji, h2 .emoji-bw {
 }
 
 .project-card:hover .project-image {
-    flex: 0 0 630px;
+    flex: 0 0 calc(660px - 140px); /* Вычитаем высоту контента для компенсации */
 }
 
 @media (max-width: 768px) {
