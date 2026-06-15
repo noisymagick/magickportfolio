@@ -259,6 +259,9 @@ h2 .emoji, h2 .emoji-bw {
     font-size: 1.5em; /* 24px */
     font-style: italic;
     margin-bottom: 0.01em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .project-head h3 .emoji, .project-head h3 .emoji-bw {
@@ -277,6 +280,12 @@ h2 .emoji, h2 .emoji-bw {
     flex: 0 0 calc(660px - 140px); /* Вычитаем высоту контента для компенсации */
 }
 
+@media (max-width: 1024px) {
+    .project-head h3 {
+        font-size: 1.25em;
+    }
+}
+
 @media (max-width: 768px) {
     .project-card, .project-card:hover {
         height: auto;
@@ -288,10 +297,7 @@ h2 .emoji, h2 .emoji-bw {
         transform: scale(1);
     }
     .project-head h3 {
-        font-size: 1.25em;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        font-size: 1.1em;
         max-width: 100%;
     }
 }

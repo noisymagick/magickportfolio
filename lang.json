@@ -25,7 +25,7 @@
       "clients_text": "Яндекс, Yango, Сбер, Щёлочь, МТС, Музей Транспорта Москвы, О-Мобайл, Детская Филармония Челябинска, Markul и другие"
     },
     "footer": {
-      "open_to_work": "Чувствуйте себя свободно, я открыт к коммуникации",
+      "open_to_work": "",
       "approach_text": "Я нахожу индивидуальный подход к каждому клиенту, глубоко погружаясь в контекст",
       "contact_text": "Свяжитесь со мной, чтобы мы обсудили ваш проект, составили прозрачный план и начали работу",
       "credits": "Дизайн и реализация noisymagick"
@@ -50,9 +50,9 @@
       "subtitle": "Graphic & Communication Designer",
       "about_title": "<span class=\"emoji-bw\">👀</span> <br> About me",
       "about_text_1": "I am a designer working at the intersection of communications, graphic design, and digital environments",
-      "about_text_2": "I specialize in creating holistic visual systems — from brand identity and marketing materials to websites",
+      "about_text_2": "I specialize in creating unified visual systems — from brand identity and marketing materials to websites",
       "about_text_3": "I focus on meaning, not tools",
-      "useful_for": "How I can be useful:",
+      "useful_for": "How I can help you:",
       "tags": "Brand Identity,Visual Communication,Digital Design,Creative Direction,Graphic & Print Production,AI-Design,Design-Support",
       "experience_title": "<span class=\"emoji-bw\">💼</span> <br> Work experience",
       "experience_list": [
@@ -65,7 +65,7 @@
       "clients_text": "Yandex, Yango, Sber, Sholotch, MTS, Moscow Transport Museum, O-Mobile, Chelyabinsk Children's Philharmonic, Markul and others"
     },
     "footer": {
-      "open_to_work": "Feel free to reach out, I am open to communication",
+      "open_to_work": "",
       "approach_text": "I find an individual approach for every client, diving deep into the context",
       "contact_text": "Contact me so we can discuss your project, create a transparent plan, and get started",
       "credits": "Design and development by noisymagick"
