@@ -40,6 +40,8 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 56px;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 /* Предотвращение мигания контента при загрузке языка */
