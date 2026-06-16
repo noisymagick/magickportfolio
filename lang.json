@@ -37,6 +37,27 @@
     "general": {
       "soon": "Скоро",
       "cv": "CV ←"
+    },
+    "projects": {
+      "flowdesk": {
+        "title": "Flowdesk",
+        "service_label": "Услуга:",
+        "service": "Концепция бренд-айдентики",
+        "year_label": "Год:",
+        "year": "2026",
+        "context_label": "Контекст:",
+        "context": "Flowdesk — инструмент управления проектами, созданный для креативных команд. Главная задача платформы — помогать бизнесу расти, не перегружая процессы администрированием",
+        "idea_label": "Идея:",
+        "idea": "В дизайне мы отказались от визуального шума в пользу эстетики «чистого листа». Концепция строится на идее, что рабочий инструмент должен существовать лишь до момента завершения задачи, оставляя пространство для настоящего творчества, а не для менеджмента ради менеджмента"
+      },
+      "lukum": {
+        "title": "Lukum",
+        "service_label": "Услуга:",
+        "service": "Бренд-айдентика & Упаковка",
+        "year_label": "Год:",
+        "year": "2025",
+        "description": "Проект был создан в рамках работы в студии PackFor для одного из клиентов. В процессе было реализовано множество итераций, но по итогу продукт успешно дошел до релиза"
+      }
     }
   },
   "en": {
@@ -77,6 +98,27 @@
     "general": {
       "soon": "Soon",
       "cv": "CV ←"
+    },
+    "projects": {
+      "flowdesk": {
+        "title": "Flowdesk",
+        "service_label": "Service:",
+        "service": "Brand Identity Concept",
+        "year_label": "Year:",
+        "year": "2026",
+        "context_label": "Context:",
+        "context": "Flowdesk is a project management tool built for creative teams, designed to help businesses grow without the burden of heavy administration",
+        "idea_label": "Idea:",
+        "idea": "We moved away from visual noise towards a 'blank canvas' aesthetic. The concept is built on the belief that a tool should exist only until the task is complete, leaving space for actual creativity rather than management for management's sake"
+      },
+      "lukum": {
+        "title": "Lukum",
+        "service_label": "Service:",
+        "service": "Brand Identity & Packaging",
+        "year_label": "Year:",
+        "year": "2025",
+        "description": "This project was created at PackFor Studio for one of our clients. There were many iterations, but in the end, the product successfully made it to release"
+      }
     }
   }
 }

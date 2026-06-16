@@ -24,12 +24,20 @@ document.addEventListener('DOMContentLoaded', async () => {
         document.querySelectorAll("[data-i18n]").forEach(el => {
             const keys = el.dataset.i18n.split('.');
             let value = translations[lang];
-            keys.forEach(k => value = value[k]);
+            keys.forEach(k => {
+                if (value && value[k] !== undefined) {
+                    value = value[k];
+                } else {
+                    value = null;
+                }
+            });
             
-            if (el.tagName === 'DIV' || el.tagName === 'P' || el.tagName === 'H2') {
-                el.innerHTML = value;
-            } else {
-                el.textContent = value;
+            if (value !== null) {
+                if (el.tagName === 'DIV' || el.tagName === 'P' || el.tagName === 'H2' || el.tagName === 'H1') {
+                    el.innerHTML = value;
+                } else {
+                    el.textContent = value;
+                }
             }
         });
 
@@ -38,7 +46,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             const [attr, keyPath] = el.dataset.i18nAttr.split(':');
             const keys = keyPath.split('.');
             let value = translations[lang];
-            keys.forEach(k => value = value[k]);
+            keys.forEach(k => {
+                if (value && value[k] !== undefined) value = value[k];
+                else value = "";
+            });
             el.setAttribute(attr, value);
         });
 
@@ -76,27 +87,50 @@ document.addEventListener('DOMContentLoaded', async () => {
     const navLinks = document.querySelectorAll(".nav-left a");
     const navContainer = document.querySelector(".nav-left");
     const indicator = document.querySelector(".nav-indicator");
-    let activeLinkId = "home";
+    
+    // Определяем, на главной ли мы (есть ли секции с ID)
+    const isOnHome = document.querySelector('.reveal') !== null;
+    let activeLinkId = isOnHome ? "home" : null;
+
+    if (isOnHome) {
+        if (window.location.href.includes("#projects")) activeLinkId = "projects";
+        else if (window.location.href.includes("#archive")) activeLinkId = "archive";
+    }
 
     const updateIndicator = (el) => {
         const navRect = navContainer.getBoundingClientRect();
         const linkRect = el.getBoundingClientRect();
         indicator.style.width = `${linkRect.width}px`;
         indicator.style.left = `${linkRect.left - navRect.left}px`;
+        indicator.style.display = 'block';
     };
 
-    if (!document.getElementById(activeLinkId)) {
-        indicator.style.display = 'none';
-    } else {
-        navLinks.forEach(link => {
-            link.addEventListener("mouseenter", () => updateIndicator(link));
-        });
-        navContainer.addEventListener("mouseleave", () => {
-            const activeLink = document.querySelector(`.nav-left a[href="#${activeLinkId}"]`);
+    const hideIndicator = () => {
+        if (!isOnHome) {
+            indicator.style.display = 'none';
+        }
+    };
+
+    navLinks.forEach(link => {
+        link.addEventListener("mouseenter", () => updateIndicator(link));
+    });
+    
+    navContainer.addEventListener("mouseleave", () => {
+        if (isOnHome) {
+            const activeLink = document.querySelector(`.nav-left a[href*="#${activeLinkId}"]`);
             if (activeLink) updateIndicator(activeLink);
-        });
-        const initialActive = document.querySelector(`.nav-left a[href="#${activeLinkId}"]`) || navLinks[0];
-        if (initialActive) updateIndicator(initialActive);
+        } else {
+            hideIndicator();
+        }
+    });
+
+    if (isOnHome) {
+        const initialActive = document.querySelector(`.nav-left a[href*="#${activeLinkId}"]`) || navLinks[0];
+        if (initialActive) {
+            requestAnimationFrame(() => updateIndicator(initialActive));
+        }
+    } else {
+        hideIndicator();
     }
 
     /* --- Секции и Анимации --- */
