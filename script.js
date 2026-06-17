@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     /* --- JSON Локализация --- */
     let translations = {};
     try {
-        const response = await fetch('lang.json');
+        const response = await fetch('/lang.json');
         translations = await response.json();
     } catch (e) {
         console.error("Failed to load language file:", e);
