@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasmina — Alexander Saloidov</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script>
+        (function() {
+            var lang = localStorage.getItem('lang') || 'ru';
+            var style = document.createElement('style');
+            style.textContent = 'body:not(.lang-loaded) { visibility: hidden; }';
+            document.head.appendChild(style);
+            window.addEventListener('DOMContentLoaded', function() {
+                var buttons = document.querySelectorAll('.lang-btn');
+                buttons.forEach(function(btn) {
+                    btn.classList.remove('active');
+                    if (btn.dataset.lang === lang) {
+                        btn.classList.add('active');
+                    }
+                });
+            });
+        })();
+    </script>
+</head>
+<body>
+<canvas class="grain"></canvas>
+
+<header class="header">
+
+    <nav class="nav">
+
+        <div class="nav-left">
+
+            <div class="nav-indicator"></div>
+
+            <a href="/#home"
+               data-ru="Главная"
+               data-en="Home">
+               Главная
+            </a>
+
+            <a href="/#projects"
+               data-ru="Проекты"
+               data-en="Projects"
+               class="active">
+               Проекты
+            </a>
+
+            <a href="/#archive"
+               data-ru="Архив"
+               data-en="Archive">
+               Архив
+            </a>
+
+        </div>
+
+        <div class="lang-switch">
+
+            <button class="lang-btn active" data-lang="ru">
+                Ru
+            </button>
+
+            <span>/</span>
+
+            <button class="lang-btn" data-lang="en">
+                Eng
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<main class="project-content-wrapper">
+    <div class="project-info">
+        <a href="/#projects" class="back-link" data-ru="← Назад" data-en="← Back">← Назад</a>
+        <h1 data-i18n="projects.yasmina.title"></h1>
+        
+        <div class="project-meta">
+            <p class="meta-label" data-i18n="projects.yasmina.service_label"></p>
+            <p class="meta-value" data-i18n="projects.yasmina.service"></p>
+            <p class="meta-label" data-i18n="projects.yasmina.year_label"></p>
+            <p class="meta-value" data-i18n="projects.yasmina.year"></p>
+        </div>
+
+        <div class="project-description">
+            <p class="meta-label" data-i18n="projects.yasmina.context_label"></p>
+            <p class="meta-value" data-i18n="projects.yasmina.context"></p>
+            <p class="meta-label" data-i18n="projects.yasmina.situation_label"></p>
+            <p class="meta-value" data-i18n="projects.yasmina.situation"></p>
+            <p class="meta-label" data-i18n="projects.yasmina.task_label"></p>
+            <p class="meta-value" data-i18n="projects.yasmina.task"></p>
+            <p class="meta-label" data-i18n="projects.yasmina.action_label"></p>
+            <p class="meta-value" data-i18n="projects.yasmina.action"></p>
+            <p class="meta-label" data-i18n="projects.yasmina.result_label"></p>
+            <p class="meta-value" data-i18n="projects.yasmina.result"></p>
+        </div>
+    </div>
+    
+    <div class="project-content">
+        <div class="figma-embed">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="600" src="https://embed.figma.com/design/dbr7ZerkWRExR9hpKoWPko/Portfolio---Cases?node-id=1-644&embed-host=share" allowfullscreen></iframe>
+        </div>
+    </div>
+</main>
+
+<script src="../../script.js"></script>
+</body>
+</html>

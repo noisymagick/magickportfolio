@@ -57,6 +57,23 @@
         "year_label": "Год:",
         "year": "2025",
         "description": "Проект был создан в рамках работы в студии PackFor для одного из клиентов. В процессе было реализовано множество итераций, но по итогу продукт успешно дошел до релиза"
+      },
+      "yasmina": {
+        "title": "Yasmina Smartspeaker",
+        "service_label": "Услуга:",
+        "service": "Бренд-коммуникации в формате дизайн-поддержки",
+        "year_label": "Год:",
+        "year": "2025",
+        "context_label": "Контекст:",
+        "context": "Yasmina — умная колонка (аналог Алисы) для рынка ОАЭ, запущенная Yandex, позже Yango, при поддержке PRAGMATICA. Проект сочетал запуск нового технологичного девайса (AI Smart Speaker) в совершенно новой культурной среде, где позиционирование продукта постоянно эволюционировало в формате WIP. Помимо разработки ключевых вижуалов (KV), мы закрывали широкий спектр задач: от полиграфии до продуктовой e-commerce коммуникации на Amazon",
+        "situation_label": "Ситуация:",
+        "situation": "Запуск умной колонки Yasmina на рынок ОАЭ при постоянно меняющемся WIP-позиционировании",
+        "task_label": "Задача:",
+        "task": "Сформировать и развивать визуальный язык девайса, адаптируя его под новые вводные; закрыть e-commerce (Amazon), СММ и рекламные каналы",
+        "action_label": "Действие:",
+        "action": "Выстроил гибкий AI-workflow (Midjourney → Firefly → Nano Banana), собирал мудборды арабской культуры, проектировал КВ, экраны Amazon, СММ-креативы, раскадровки, статику. Разработал стиль 3D-иконок с помощью ИИ",
+        "result_label": "Результат:",
+        "result": "Успешный редизайн Amazon-страниц, запуск девайсов на маркетплейс, рабочий AI-пайплайн, который выдерживал бесконечные правки клиента"
       }
     }
   },
@@ -118,6 +135,23 @@
         "year_label": "Year:",
         "year": "2025",
         "description": "This project was created at PackFor Studio for one of our clients. There were many iterations, but in the end, the product successfully made it to release"
+      },
+      "yasmina": {
+        "title": "Yasmina Smartspeaker",
+        "service_label": "Service:",
+        "service": "Brand Communications as Design Support",
+        "year_label": "Year:",
+        "year": "2025",
+        "context_label": "Context:",
+        "context": "Yasmina is a smart speaker (a regional version of Alice) built for the UAE market, launched by Yandex, later Yango, with support from PRAGMATICA. The project combined the launch of a new tech device (AI Smart Speaker) in an entirely unfamiliar cultural environment with a constantly evolving WIP product positioning. Beyond developing key visuals, we covered everything from print production to full e-commerce communication on Amazon",
+        "situation_label": "Situation:",
+        "situation": "Launching Yasmina smart speaker in the UAE with constantly shifting WIP positioning",
+        "task_label": "Task:",
+        "task": "Build and evolve the visual language for the device while adapting to new briefs; cover e-commerce (Amazon), SMM, and advertising channels",
+        "action_label": "Action:",
+        "action": "Set up a flexible AI-workflow (Midjourney → Firefly → Nano Banana), researched Arabic culture references, designed KVs, Amazon PDPs, SMM content, storyboards, static banners. Developed 3D icon style using AI",
+        "result_label": "Result:",
+        "result": "Successful Amazon page redesign, device launch on the marketplace, a working AI pipeline that handled endless client revisions"
       }
     }
   }

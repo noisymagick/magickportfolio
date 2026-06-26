@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 ndaModal.style.display = "flex";
                 ndaInput.focus();
                 const checkNda = () => {
-                    if (ndaInput.value === "1111") {
+                    if (ndaInput.value === "Prosmotr") {
                         ndaModal.style.display = "none";
                         ndaInput.value = "";
                         ndaInput.placeholder = translations[currentLang].nda.placeholder;
