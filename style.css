@@ -5,17 +5,18 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1000;
+    z-index: 10000;
     pointer-events: none;
     opacity: 1;
 }
+
 
 /* Общие стили */
 :root {
     --space-xs: 8px;
     --space-s: 16px;
     --space-m: 24px;
-    --space-l: 40px;
+    --space-l: 48px;
     --space-xl: 80px;
     --space-xxl: 120px;
     --container-padding: 56px;
@@ -38,6 +39,7 @@
 }
 
 html {
+    font-size: 112.5%;
     scroll-behavior: smooth;
     scroll-padding-top: 56px;
     -webkit-text-size-adjust: 100%;
@@ -53,7 +55,7 @@ body {
     background: #0C0C0C;
     color: #ffffff;
     font-family: "Times New Roman", serif;
-    font-size: 1rem; /* 16px */
+    font-size: 1rem; /* 18px */
     line-height: 1.5;
 }
 
@@ -117,7 +119,7 @@ img {
     color: #ffffff;
     cursor: pointer;
     font-family: inherit;
-    font-size: 0.888em; /* 16px */
+    font-size: 0.7778em; /* 14px */
     opacity: .45;
     transition: .25s;
     padding: 0.25em 0.625em;
@@ -141,7 +143,7 @@ img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto;
-    gap: 40px;
+    gap: 48px;
     align-items: start;
 }
 
@@ -158,7 +160,7 @@ img {
 }
 
 .intro-grid h2 {
-    font-size: 1.5em; /* 24px */
+    font-size: 1.6667em; /* 30px */
     font-style: italic;
     margin-bottom: 0.7em;
 }
@@ -168,7 +170,7 @@ h2 .emoji, h2 .emoji-bw {
 }
 
 .intro-grid p {
-    font-size: 1em; /* 16px */
+    font-size: 1em; /* 18px */
     margin-bottom: 1.0em;
 }
 
@@ -177,7 +179,7 @@ h2 .emoji, h2 .emoji-bw {
 }
 
 #service-tags {
-    font-size: 1em; /* 16px */
+    font-size: 1em; /* 18px */
     font-style: italic;
     opacity: 0.65;
     height: 1.5em;
@@ -231,7 +233,7 @@ h2 .emoji, h2 .emoji-bw {
 
 .projects-row {
     display: flex;
-    gap: 40px;
+    gap: 48px;
     overflow-x: auto;
     scrollbar-width: none;
     align-items: flex-end;
@@ -245,7 +247,7 @@ h2 .emoji, h2 .emoji-bw {
     flex: 0 0 32vw;
     display: flex;
     flex-direction: column;
-    gap: 1.0em;
+    gap: 1.6em;
     color: #ffffff;
     /* Фиксированная высота */
     height: 694px;
@@ -258,7 +260,7 @@ h2 .emoji, h2 .emoji-bw {
 }
 
 .project-head h3 {
-    font-size: 1.5em; /* 24px */
+    font-size: 1.6667em; /* 30px */
     font-style: italic;
     margin-bottom: 0.01em;
     white-space: nowrap;
@@ -284,7 +286,7 @@ h2 .emoji, h2 .emoji-bw {
 
 @media (max-width: 1024px) {
     .project-head h3 {
-        font-size: 1.25em;
+        font-size: 1.333em;
     }
 }
 
@@ -299,8 +301,11 @@ h2 .emoji, h2 .emoji-bw {
         transform: scale(1);
     }
     .project-head h3 {
-        font-size: 1.1em;
+        font-size: 1.111em;
         max-width: 100%;
+    }
+    .project-card {
+        gap: 0.5em;
     }
 }
 
@@ -319,10 +324,10 @@ h2 .emoji, h2 .emoji-bw {
 .cursor-soon {
     position: fixed;
     pointer-events: none;
-    z-index: 9999;
+    z-index: 999;
     font-size: 1em; /* 18px */
     font-style: italic;
-    background: #000000;
+    background: #0C0C0C;
     color: #ffffff;
     padding: 0.22em 0.55em;
     opacity: 0;
@@ -429,7 +434,7 @@ h2 .emoji, h2 .emoji-bw {
 #nda-error {
     font-family: "Times New Roman", serif;
     font-style: italic;
-    font-size: 0.888em; /* 16px */
+    font-size: 0.7778em; /* 14px */
     color: #888;
     margin-top: 0.55em;
 }
@@ -520,7 +525,7 @@ h2 .emoji, h2 .emoji-bw {
     height: calc(100vh - 56px);
     overflow: hidden;
     padding: var(--container-padding);
-    gap: 40px;
+    gap: 48px;
 }
 
 .project-info {
@@ -546,7 +551,7 @@ h2 .emoji, h2 .emoji-bw {
 }
 
 .project-info h1 {
-    font-size: 1.5em; /* 24px */
+    font-size: 1.6667em; /* 30px */
     font-style: italic;
     margin-bottom: 1em;
 }
@@ -556,7 +561,7 @@ h2 .emoji, h2 .emoji-bw {
 }
 
 .meta-label {
-    font-size: 0.888em; /* 16px */
+    font-size: 0.7778em; /* 14px */
     font-style: italic;
     margin-bottom: 0.22em !important;
 }
@@ -624,7 +629,7 @@ h2 .emoji, h2 .emoji-bw {
     }
     .intro-grid {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 48px;
     }
     .portrait {
         position: fixed;
@@ -636,7 +641,7 @@ h2 .emoji, h2 .emoji-bw {
         margin-top: 0;
     }
     .nav-left { gap: 16px; }
-    .nav-left a { font-size: 0.888em; /* 16px */ }
+    .nav-left a { font-size: 0.7778em; /* 14px */ }
     .project-card { flex: 0 0 85vw; }
     .archive-grid { column-count: 2; column-gap: 15px; }
     

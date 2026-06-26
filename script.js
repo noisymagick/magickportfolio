@@ -286,14 +286,14 @@ document.addEventListener('DOMContentLoaded', async () => {
       constructor(el) {
         /**
          * Настройки зерна:
-         * patternSize: размер сетки (меньше значение = мельче шум)
+         * patternSize: размер сетки (чем меньше, тем крупнее узор)
          * patternAlpha: прозрачность шума (0-255)
          */
-        this.patternSize = 600;
-        this.patternScaleX = 1;
-        this.patternScaleY = 1;
+        this.patternSize = 250;
+        this.patternScaleX = 5;
+        this.patternScaleY = 5;
         this.patternRefreshInterval = 6;
-        this.patternAlpha = 6;
+        this.patternAlpha = 13;
 
         this.canvas = el;
         this.ctx = this.canvas.getContext("2d");
@@ -311,10 +311,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         this.resize = this.resize.bind(this);
         this.loop = this.loop.bind(this);
+        this.resizeDebounced = this.resizeDebounced.bind(this);
 
         this.frame = 0;
 
-        window.addEventListener("resize", this.resize);
+        window.addEventListener("resize", this.resizeDebounced);
         this.resize();
 
         window.requestAnimationFrame(this.loop);
@@ -323,6 +324,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       resize() {
         this.canvas.width = window.innerWidth * window.devicePixelRatio;
         this.canvas.height = window.innerHeight * window.devicePixelRatio;
+      }
+
+      resizeDebounced() {
+        clearTimeout(this._resizeTimer);
+        this._resizeTimer = setTimeout(() => {
+          this.resize();
+        }, 100);
       }
 
       update() {
