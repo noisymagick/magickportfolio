@@ -726,7 +726,8 @@ h2 .emoji, h2 .emoji-bw {
         position: relative;
     }
     .project-subtitle {
-        display: none;
+        display: block;
+        opacity: 1;
         position: relative;
         background: none;
     }
