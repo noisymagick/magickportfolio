@@ -722,12 +722,12 @@ h2 .emoji, h2 .emoji-bw {
     }
     .project-tags {
         display: block;
-        opacity: 1;
+        opacity: 1 !important;
         position: relative;
     }
     .project-subtitle {
         display: block;
-        opacity: 1;
+        opacity: 1 !important;
         position: relative;
         background: none;
     }
