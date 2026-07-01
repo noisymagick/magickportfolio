@@ -707,18 +707,12 @@ h2 .emoji, h2 .emoji-bw {
     .project-card:hover img {
         transform: scale(1);
     }
-    .project-card:hover .project-subtitle {
-        opacity: 1;
-    }
-    .project-card:hover .project-tags {
-        opacity: 1;
-    }
     .project-head {
-        padding-top: 20px;
+        padding-top: 30px;
     }
     .project-head {
         height: auto;
-        min-height: 80px;
+        min-height: 100px;
     }
     .project-head h3 {
         max-width: 100%;
@@ -732,7 +726,7 @@ h2 .emoji, h2 .emoji-bw {
         position: relative;
     }
     .project-subtitle {
-        opacity: 1;
+        display: none;
         position: relative;
         background: none;
     }
