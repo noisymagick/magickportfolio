@@ -708,11 +708,11 @@ h2 .emoji, h2 .emoji-bw {
         transform: scale(1);
     }
     .project-head {
-        padding-top: 30px;
+        padding-top: 50px;
     }
     .project-head {
         height: auto;
-        min-height: 100px;
+        min-height: 120px;
     }
     .project-head h3 {
         max-width: 100%;
