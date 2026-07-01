@@ -279,7 +279,7 @@ h2 .emoji, h2 .emoji-bw {
 }
 
 .project-card {
-    flex: 0 0 36vw;
+    flex: 0 0 32vw;
     display: flex;
     flex-direction: column;
     gap: 1.6em;
@@ -305,19 +305,19 @@ h2 .emoji, h2 .emoji-bw {
     justify-content: flex-end;
 }
 
+.project-head h3,
+.project-head p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .project-head h3 {
     font-size: var(--font-size-lg);
     font-style: italic;
     margin-bottom: 0.2em;
     line-height: 1.2;
     position: relative;
-    word-break: break-word;
-}
-
-.project-head p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .project-head p {
@@ -641,10 +641,10 @@ h2 .emoji, h2 .emoji-bw {
         gap: 50px;
     }
     .project-card {
-        flex: 0 0 46vw;
-        width: 46vw;
-        min-width: 46vw;
-        max-width: 46vw;
+        flex: 0 0 42vw;
+        width: 42vw;
+        min-width: 42vw;
+        max-width: 42vw;
     }
 }
 
@@ -695,11 +695,11 @@ h2 .emoji, h2 .emoji-bw {
     .project-card,
     .project-card:hover {
         height: auto;
-        flex: 0 0 80vw;
-        width: 80vw;
-        min-width: 80vw;
-        max-width: 80vw;
-        gap: 0.3em;
+        flex: 0 0 88vw;
+        width: 88vw;
+        min-width: 88vw;
+        max-width: 88vw;
+        gap: 1.6em;
     }
     .project-card:hover .project-image {
         flex: 0 0 324px;
@@ -708,11 +708,11 @@ h2 .emoji, h2 .emoji-bw {
         transform: scale(1);
     }
     .project-head {
-        padding-top: 50px;
+        padding-top: 30px;
     }
     .project-head {
         height: auto;
-        min-height: 120px;
+        min-height: 100px;
     }
     .project-head h3 {
         max-width: 100%;
