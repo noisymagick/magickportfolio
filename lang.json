@@ -19,15 +19,15 @@
         "2025 <br> PRAGMATICA / Коммуникационный дизайнер",
         "2024 <br> PackFor Studio / Графический дизайнер",
         "2023 <br> ЫТЬ! Agency / Графический дизайнер",
-        "2021 → now <br> Freelance / Дизайнер"
+        "2021 → сейчас <br> Фриланс / Дизайнер"
       ],
       "clients_title": "<span class=\"emoji-bw\">🎨</span> <br> Избранные клиенты",
       "clients_text": "Яндекс, Yango, Сбер, Щёлочь, МТС, Музей Транспорта Москвы, О-Мобайл, Детская Филармония Челябинска, Markul и другие"
     },
     "footer": {
       "open_to_work": "",
-      "approach_text": "Я нахожу индивидуальный подход к каждому клиенту, глубоко погружаясь в контекст",
-      "contact_text": "Свяжитесь со мной, чтобы мы обсудили ваш проект, составили прозрачный план и начали работу",
+      "approach_text": "Нахожу индивидуальный подход <br>к каждому клиенту, глубоко погружаясь<br>в контекст и цели",
+      "contact_text": "Свяжитесь со мной, чтобы мы обсудили<br>ваш проект, составили прозрачный план<br>и начали работу",
       "credits": "Дизайн и реализация noisymagick"
     },
     "nda": {
@@ -36,7 +36,9 @@
     },
     "general": {
       "soon": "Скоро",
-      "cv": "CV ←"
+      "cv": "CV ←",
+      "back": "← Назад",
+      "behance": "Оригинальный кейс на Behance ←"
     },
     "projects": {
       "flowdesk": {
@@ -74,6 +76,58 @@
         "action": "Выстроил гибкий AI-workflow (Midjourney → Firefly → Nano Banana), собирал мудборды арабской культуры, проектировал КВ, экраны Amazon, СММ-креативы, раскадровки, статику. Разработал стиль 3D-иконок с помощью ИИ",
         "result_label": "Результат:",
         "result": "Успешный редизайн Amazon-страниц, запуск девайсов на маркетплейс, рабочий AI-пайплайн, который выдерживал бесконечные правки клиента"
+      },
+      "cards": {
+        "yasmina": {
+          "title": "Yasmina Дизайн-поддержка",
+          "subtitle": "Yango / PRAGMATICA — 2025, ОАЭ",
+          "tags": "КВ, СММ, Е-Комм, Перформанс, ИИ-графика"
+        },
+        "flowdesk": {
+          "title": "Flowdesk",
+          "subtitle": "Фриланс — 2026",
+          "tags": "Бренд-айдентика"
+        },
+        "lukum": {
+          "title": "Lukum",
+          "subtitle": "PackFor — 2024",
+          "tags": "Бренд-айдентика, упаковка"
+        },
+        "caramelco": {
+          "title": "Caramel Co",
+          "subtitle": "Фриланс — 2024, Израиль",
+          "tags": "Бренд-айдентика, Упаковка, Полиграфия"
+        },
+        "aliceai": {
+          "title": "AliceAI Дизайн-поддержка",
+          "subtitle": "Яндекс / PRAGMATICA — 2025",
+          "tags": "КВ, Полиграфия, ИИ-Графика"
+        },
+        "yandexmusic": {
+          "title": "Яндекс Музыка",
+          "subtitle": "Тестовое задание — 2026",
+          "tags": "КВ, ИИ-графика"
+        },
+        "krov": {
+          "title": "КРОВ",
+          "subtitle": "Фриланс — 2024",
+          "tags": "Бренд-айдентика, Полиграфия, Упаковка"
+        },
+        "mrakobes": {
+          "title": "МРАКОБЕС",
+          "subtitle": "Персональный проект, 2020 → 2026",
+          "tags": "Арт-Дирекшн"
+        },
+        "omobile": {
+          "title": "О-Мобайл Дизайн-поддержка",
+          "subtitle": "ЫТЬ! — 2024, Таджикистан",
+          "tags": "СММ, POS, КВ"
+        },
+        "ite": {
+          "title": "Редизайн портфолио",
+          "subtitle": "ЫТЬ! — 2024",
+          "tags": "Веб-дизайн"
+        }
       }
     }
   },
@@ -99,13 +153,13 @@
         "2023 <br> ЫТЬ! Agency / Graphic Designer",
         "2021 → now <br> Freelance / Designer"
       ],
-      "clients_title": "<span class=\"emoji-bw\">🎨</span> <br> Selected Clients",
+      "clients_title": "<span class=\"emoji-bw\">🎨</span> <br> Selected clients",
       "clients_text": "Yandex, Yango, Sber, Sholotch, MTS, Moscow Transport Museum, O-Mobile, Chelyabinsk Children's Philharmonic, Markul and others"
     },
     "footer": {
       "open_to_work": "",
-      "approach_text": "I find an individual approach for every client, diving deep into the context",
-      "contact_text": "Contact me so we can discuss your project, create a transparent plan, and get started",
+      "approach_text": "I find an individual approach<br>for every client, diving deep<br>into the context and goals",
+      "contact_text": "Contact me so we can discuss<br>your project, create a transparent plan,<br>and get started",
       "credits": "Design and development by noisymagick"
     },
     "nda": {
@@ -114,7 +168,9 @@
     },
     "general": {
       "soon": "Soon",
-      "cv": "CV ←"
+      "cv": "CV ←",
+      "back": "← Back",
+      "behance": "Original case on Behance ←"
     },
     "projects": {
       "flowdesk": {
@@ -152,7 +208,59 @@
         "action": "Set up a flexible AI-workflow (Midjourney → Firefly → Nano Banana), researched Arabic culture references, designed KVs, Amazon PDPs, SMM content, storyboards, static banners. Developed 3D icon style using AI",
         "result_label": "Result:",
         "result": "Successful Amazon page redesign, device launch on the marketplace, a working AI pipeline that handled endless client revisions"
-      }
+      },
+        "cards": {
+          "yasmina": {
+            "title": "Yasmina Design-support",
+            "subtitle": "Yango / PRAGMATICA — 2025, UAE",
+            "tags": "KVs, SMM, E-Comm, Performance, AI-graphics"
+          },
+          "flowdesk": {
+            "title": "Flowdesk",
+            "subtitle": "Freelance — 2026",
+            "tags": "Brand Identity"
+          },
+          "lukum": {
+            "title": "Lukum",
+            "subtitle": "PackFor — 2024",
+            "tags": "Brand Identity, Packaging"
+          },
+          "caramelco": {
+            "title": "Caramel Co",
+            "subtitle": "Freelance — 2024, Israel",
+            "tags": "Brand Identity, Packaging, Print Materials"
+          },
+          "aliceai": {
+            "title": "AliceAI Design-support",
+            "subtitle": "Yandex / PRAGMATICA — 2025",
+            "tags": "KV's, Print Materials, AI-Graphics"
+          },
+          "yandexmusic": {
+            "title": "Yandex Music",
+            "subtitle": "Test task — 2026",
+            "tags": "KVs, AI-graphics"
+          },
+          "krov": {
+            "title": "KROV",
+            "subtitle": "Freelance — 2024",
+            "tags": "Brand Identity, Print Materials, Packaging"
+          },
+          "mrakobes": {
+            "title": "MRAKOBES",
+            "subtitle": "Personal project, 2020 → 2026",
+            "tags": "Art-Direction"
+          },
+          "omobile": {
+            "title": "O-Mobile Design-support",
+            "subtitle": "YT! — 2024, Tajikistan",
+            "tags": "SMM, POS, KVs"
+          },
+          "ite": {
+            "title": "Agency portfolio redesign",
+            "subtitle": "YT! — 2024",
+            "tags": "Web-Design"
+          }
+        }
     }
   }
 }
