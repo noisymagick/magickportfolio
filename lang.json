@@ -52,6 +52,21 @@
         "idea_label": "Идея:",
         "idea": "В дизайне мы отказались от визуального шума в пользу эстетики «чистого листа». Концепция строится на идее, что рабочий инструмент должен существовать лишь до момента завершения задачи, оставляя пространство для настоящего творчества, а не для менеджмента ради менеджмента"
       },
+      "aliceai": {
+        "title": "Alice AI",
+        "service_label": "Услуга:",
+        "service": "Дизайн-поддержка ребрендинга",
+        "year_label": "Год:",
+        "year": "2025",
+        "context_label": "Контекст:",
+        "context": "В рамках ребрендинга Alice AI нашей команде по проекту дизайн-поддержки продукта Yasmina дали возможность прикоснуться к ребрендингу и помочь с макетами для запуска нового стиля",
+        "task_label": "Задача:",
+        "task": "Разработать визуальные решения для запуска обновлённого стиля Alice AI, тестируя новые подходы к генеративной графике",
+        "action_label": "Действие:",
+        "action": "Тестировали в макетах кастомные утилиты для глитчей, сделанные с помощью вайбкодинга, использовали генеративный флоу для графики: мудборд и система из обновлённого стиля + идея → Midjourney → Nano Banana → апскейл",
+        "result_label": "Результат:",
+        "result": "Подготовлены макеты для запуска нового стиля, отработаны экспериментальные AI-пайплайны"
+      },
       "lukum": {
         "title": "Lukum",
         "service_label": "Услуга:",
@@ -183,6 +198,21 @@
         "context": "Flowdesk is a project management tool built for creative teams, designed to help businesses grow without the burden of heavy administration",
         "idea_label": "Idea:",
         "idea": "We moved away from visual noise towards a 'blank canvas' aesthetic. The concept is built on the belief that a tool should exist only until the task is complete, leaving space for actual creativity rather than management for management's sake"
+      },
+      "aliceai": {
+        "title": "Alice AI",
+        "service_label": "Service:",
+        "service": "Rebranding Design Support",
+        "year_label": "Year:",
+        "year": "2025",
+        "context_label": "Context:",
+        "context": "As part of the Alice AI rebranding, our team working on the Yasmina design-support project had the opportunity to contribute to the rebranding and help with layouts for the new style launch",
+        "task_label": "Task:",
+        "task": "Develop visual solutions for launching the renewed Alice AI style, testing new approaches to generative graphics",
+        "action_label": "Action:",
+        "action": "Tested custom vibe-coded plugins for glitch effects, used a generative flow: moodboard + updated style system + idea → Midjourney → Nano Banana → upscale",
+        "result_label": "Result:",
+        "result": "Delivered layouts for the new style launch, refined experimental AI pipelines"
       },
       "lukum": {
         "title": "Lukum",
