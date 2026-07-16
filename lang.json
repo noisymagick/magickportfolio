@@ -16,7 +16,7 @@
       "tags": "Брендинг и визуальная айдентика,Визуальная коммуникация,Цифровой дизайн,Креативное направление,Графика и печатная продукция,ИИ-Дизайн,Дизайн-поддержка",
       "experience_title": "<span class=\"emoji-bw\">💼</span> <br> Опыт работы",
       "experience_list": [
-        "2025 <br> PRAGMATICA / Коммуникационный дизайнер",
+        "2025 <br> PRAGMATICA / Коммуникационнаый дизайнер",
         "2024 <br> PackFor Studio / Графический дизайнер",
         "2023 <br> ЫТЬ! Agency / Графический дизайнер",
         "2021 → сейчас <br> Фриланс / Дизайнер"
@@ -74,6 +74,23 @@
         "year_label": "Год:",
         "year": "2025",
         "description": "Проект был создан в рамках работы в студии PackFor для одного из клиентов. В процессе было реализовано множество итераций, но по итогу продукт успешно дошел до релиза"
+      },
+      "yandexmusic": {
+        "title": "Яндекс Музыка",
+        "service_label": "Услуга:",
+        "service": "Тестовое задание / Key Visual",
+        "year_label": "Год:",
+        "year": "2026",
+        "context_label": "Контекст:",
+        "context": "Кампания: «Самые точные музыкальные рекомендации» для Яндекс Музыки",
+        "task_label": "Задача:",
+        "task": "Разработать 3 варианта KV: С артистом, Продуктовый и Свободный",
+        "idea_label": "Идея:",
+        "idea": "Общая концепция строится вокруг точности музыкальных рекомендаций. Первый KV отсылает к группе My Bloody Valentine, второй — продуктовый (в двух вариациях: смелой и безопасной), третий — экспериментальный, панковый, шумный. После первого драфта родилась идея трансформировать KV в микро-айдентику и менять цвет в зависимости от набора инструментов, отсылая к конкретному жанру музыки",
+        "process_label": "Процесс:",
+        "process": "Собрал драфты по композициям → Описал идею и сделал мастер-промпт через LLM для генерации ассетов → Генерация в Weavy → Чистка в Photoshop → Финальная композиция. Дополнительно тестировал ресайзы через AI-агентов и MCP: подключил ИИ к Figma и собрал матрицу ресайзов (с последующей ручной доработкой)",
+        "result_label": "Результат:",
+        "result": "3 варианта Key Visual + микро-айдентика с изменяемой цветовой палитрой под разные жанры. AI-workflow: LLM → Weavy → Photoshop + Figma + MCP"
       },
       "yasmina": {
         "title": "Yasmina Smartspeaker",
@@ -221,6 +238,23 @@
         "year_label": "Year:",
         "year": "2025",
         "description": "This project was created at PackFor Studio for one of our clients. There were many iterations, but in the end, the product successfully made it to release"
+      },
+      "yandexmusic": {
+        "title": "Yandex Music",
+        "service_label": "Service:",
+        "service": "Test task / Key Visual",
+        "year_label": "Year:",
+        "year": "2026",
+        "context_label": "Context:",
+        "context": "Campaign: «The most accurate music recommendations» for Yandex Music",
+        "task_label": "Task:",
+        "task": "Develop 3 KV options: With an artist, Product-focused and Free-form",
+        "idea_label": "Idea:",
+        "idea": "The concept revolves around the precision of music recommendations. The first KV references My Bloody Valentine, the second is product-focused (in two variations: bold and safe), the third is experimental — punk, noisy. After the first draft, the idea evolved into transforming the KV into a micro-identity with color changes based on instrument sets, referencing specific music genres",
+        "process_label": "Process:",
+        "process": "Gathered composition drafts → Described the concept and created a master prompt via LLM for asset generation → Generation in Weavy → Cleanup in Photoshop → Final composition. Also tested resizes through AI agents and MCP: connected AI to Figma and built a resize matrix (with manual adjustments afterwards)",
+        "result_label": "Result:",
+        "result": "3 Key Visuals + micro-identity with a variable color palette for different genres. AI-workflow: LLM → Weavy → Photoshop + Figma + MCP"
       },
       "yasmina": {
         "title": "Yasmina Smartspeaker",

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Яндекс Музыка — Alexander Saloidov</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script>
+        (function() {
+            var lang = localStorage.getItem('lang') || 'ru';
+            var style = document.createElement('style');
+            style.textContent = 'body:not(.lang-loaded) { visibility: hidden; }';
+            document.head.appendChild(style);
+            window.addEventListener('DOMContentLoaded', function() {
+                var buttons = document.querySelectorAll('.lang-btn');
+                buttons.forEach(function(btn) {
+                    btn.classList.remove('active');
+                    if (btn.dataset.lang === lang) {
+                        btn.classList.add('active');
+                    }
+                });
+            });
+        })();
+    </script>
+</head>
+<body>
+<canvas class="grain"></canvas>
+
+<header class="header">
+    <nav class="nav">
+        <div class="nav-left">
+            <div class="nav-indicator"></div>
+            <a href="/#home" data-i18n="nav.home"></a>
+            <a href="/#projects" data-i18n="nav.projects" class="active"></a>
+            <a href="/#archive" data-i18n="nav.archive"></a>
+        </div>
+        <div class="lang-switch">
+            <button class="lang-btn active" data-lang="ru">Ru</button>
+            <span>/</span>
+            <button class="lang-btn" data-lang="en">Eng</button>
+        </div>
+    </nav>
+</header>
+
+<main class="project-content-wrapper">
+    <div class="project-info">
+        <a href="/#projects" class="back-link" data-i18n="general.back"></a>
+        <h1 data-i18n="projects.yandexmusic.title"></h1>
+        
+        <div class="project-meta">
+            <p class="meta-label" data-i18n="projects.yandexmusic.service_label"></p>
+            <p class="meta-value" data-i18n="projects.yandexmusic.service"></p>
+            <p class="meta-label" data-i18n="projects.yandexmusic.year_label"></p>
+            <p class="meta-value" data-i18n="projects.yandexmusic.year"></p>
+        </div>
+
+        <div class="project-description">
+            <p class="meta-label" data-i18n="projects.yandexmusic.context_label"></p>
+            <p class="meta-value" data-i18n="projects.yandexmusic.context"></p>
+            <p class="meta-label" data-i18n="projects.yandexmusic.task_label"></p>
+            <p class="meta-value" data-i18n="projects.yandexmusic.task"></p>
+            <p class="meta-label" data-i18n="projects.yandexmusic.idea_label"></p>
+            <p class="meta-value" data-i18n="projects.yandexmusic.idea"></p>
+            <p class="meta-label" data-i18n="projects.yandexmusic.process_label"></p>
+            <p class="meta-value" data-i18n="projects.yandexmusic.process"></p>
+            <p class="meta-label" data-i18n="projects.yandexmusic.result_label"></p>
+            <p class="meta-value" data-i18n="projects.yandexmusic.result"></p>
+        </div>
+    </div>
+    
+    <div class="project-content">
+        <img src="0.png" alt="Yandex Music">
+        <img src="1.png" alt="Yandex Music">
+        <img src="2.png" alt="Yandex Music">
+        <img src="3.png" alt="Yandex Music">
+        <img src="4.png" alt="Yandex Music">
+        <img src="5.png" alt="Yandex Music">
+        <img src="6.png" alt="Yandex Music">
+    </div>
+</main>
+
+<script src="../../script.js"></script>
+</body>
+</html>

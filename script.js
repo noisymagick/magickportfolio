@@ -125,10 +125,10 @@ function initNavigation() {
     navLinks.forEach(link => {
         link.addEventListener("mouseenter", () => updateIndicator(link));
         link.addEventListener("click", (e) => {
-            e.preventDefault();
             const targetId = link.getAttribute("href").substring(1);
             const target = document.getElementById(targetId);
             if (target) {
+                e.preventDefault();
                 target.scrollIntoView({ behavior: 'auto', block: 'start' });
             }
         });
@@ -172,6 +172,8 @@ function initScrollAnimations() {
     const sections = document.querySelectorAll(".reveal");
     const portrait = document.querySelector(".portrait");
 
+    let initialHash = window.location.hash;
+
     const handleScroll = () => {
         if (portrait) portrait.classList.toggle("hidden", window.scrollY > 10);
 
@@ -187,6 +189,16 @@ function initScrollAnimations() {
         });
 
         if (current && current !== activeLinkId) {
+            if (initialHash) {
+                const hashTarget = initialHash.substring(1);
+                if (hashTarget && hashTarget !== current && sections.length > 0) {
+                    const hashSection = document.getElementById(hashTarget);
+                    if (hashSection && window.scrollY < hashSection.offsetTop - 50) {
+                        return;
+                    }
+                }
+                initialHash = null;
+            }
             activeLinkId = current;
             const activeLink = document.querySelector(`.nav-left a[href="#${activeLinkId}"]`);
             if (activeLink) requestAnimationFrame(() => updateIndicator(activeLink));
